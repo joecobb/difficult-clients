@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const port = 5025;
 app.use(cors());
-app.use(json());
+app.use(express.json());
 
 app.get('/truthy', (req, res) => {
     res.send({
