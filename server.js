@@ -7,8 +7,8 @@ app.use(express.json());
 
 app.get('/truthy', (req, res) => {
     res.send({
-        status: false
-    })
+        status: true
+    });
 })
 
 app.listen(port, () => {
