@@ -5,7 +5,9 @@ app.use(cors());
 app.use(json());
 
 app.get('/truthy', (req, res) => {
-
+    res.send({
+        status: false
+    })
 })
 
 app.listen(port, () => {
