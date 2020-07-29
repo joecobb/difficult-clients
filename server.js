@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.get('/truthy', (req, res) => {
     res.send({
-        status: true
+        status: false
     });
 })
 
